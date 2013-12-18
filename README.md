@@ -1,6 +1,5 @@
-# One month Rails
+# One month Ruby and Rails 
 
+This is my first Ruby application project
 This is the code sample application for 
-[* one month Rails*]
-
-by Heena khan 
+[*One Month Rails*](http://onemonthrails.com)
