@@ -1,9 +1,17 @@
 
-<div class ="jumbotron">
+<div class ="jumbotron center">
 
   <h1>Welcome to my application</h1>
-  <p>Click here to <%= link_to "Sign up", "#", class: "btn btn-primary"%></p>
+  
 
+<% if user_signed_in? %>
+    # Welcome to our page
+<% else %>
+  <p>
+     <%= link_to "Sign up", new_user_registration_path, class: "btn btn-default btn-lg" %>
+     <%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-lg" %>
+  </p>
+<% end %>
   <%= image_tag "test/allah1.jpg" %>
 
 </div>
